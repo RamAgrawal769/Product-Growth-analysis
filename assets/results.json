@@ -1,0 +1,188 @@
+{
+  "overall_funnel": {
+    "signups": 11375,
+    "activated": 4756,
+    "converted_paid": 785,
+    "activation_rate": 0.41810989010989014,
+    "conversion_rate": 0.06901098901098901,
+    "activated_to_paid_rate": 0.1650546677880572
+  },
+  "funnel_by_channel": [
+    {
+      "channel": "paid_search",
+      "signups": 3229,
+      "activated": 1206,
+      "converted": 202.0,
+      "activation_rate": 0.3735,
+      "conversion_rate": 0.0626,
+      "activated_to_paid_rate": 0.1675
+    },
+    {
+      "channel": "organic_search",
+      "signups": 2493,
+      "activated": 1122,
+      "converted": 180.0,
+      "activation_rate": 0.4501,
+      "conversion_rate": 0.0722,
+      "activated_to_paid_rate": 0.1604
+    },
+    {
+      "channel": "paid_social",
+      "signups": 2113,
+      "activated": 652,
+      "converted": 95.0,
+      "activation_rate": 0.3086,
+      "conversion_rate": 0.045,
+      "activated_to_paid_rate": 0.1457
+    },
+    {
+      "channel": "content",
+      "signups": 1468,
+      "activated": 736,
+      "converted": 124.0,
+      "activation_rate": 0.5014,
+      "conversion_rate": 0.0845,
+      "activated_to_paid_rate": 0.1685
+    },
+    {
+      "channel": "referral",
+      "signups": 1133,
+      "activated": 640,
+      "converted": 122.0,
+      "activation_rate": 0.5649,
+      "conversion_rate": 0.1077,
+      "activated_to_paid_rate": 0.1906
+    },
+    {
+      "channel": "outbound",
+      "signups": 939,
+      "activated": 400,
+      "converted": 62.0,
+      "activation_rate": 0.426,
+      "conversion_rate": 0.066,
+      "activated_to_paid_rate": 0.155
+    }
+  ],
+  "matured_cohort_summary": {
+    "matured_cohort_users": 10070,
+    "retained_90d": 2575,
+    "retention_90d": 0.2557100297914598
+  },
+  "retention_by_segment": [
+    {
+      "segment": "small_team",
+      "n": 3444,
+      "retained": 985.0,
+      "retention_90d": 0.286
+    },
+    {
+      "segment": "mid_market",
+      "n": 2284,
+      "retained": 579.0,
+      "retention_90d": 0.2535
+    },
+    {
+      "segment": "enterprise",
+      "n": 804,
+      "retained": 198.0,
+      "retention_90d": 0.2463
+    },
+    {
+      "segment": "solo",
+      "n": 3538,
+      "retained": 813.0,
+      "retention_90d": 0.2298
+    }
+  ],
+  "north_star_latest_4wk_avg": 83.25,
+  "feature_adoption_model": {
+    "ranked_features": [
+      [
+        "invite_teammate",
+        0.376067395784994
+      ],
+      [
+        "connect_integration",
+        0.24811812038461661
+      ],
+      [
+        "create_automation",
+        0.2182022769839196
+      ],
+      [
+        "assign_task",
+        0.11068452546984332
+      ],
+      [
+        "create_task",
+        0.062376862146616835
+      ],
+      [
+        "add_comment",
+        0.056213730991427124
+      ],
+      [
+        "create_project",
+        0.004491792388467119
+      ],
+      [
+        "view_report",
+        -0.03840796125278902
+      ]
+    ],
+    "train_accuracy": 0.6147813688212928,
+    "n_observations": 4208,
+    "base_retention_rate": 0.5577471482889734
+  },
+  "ab_test": {
+    "n_control": 648,
+    "n_treatment": 669,
+    "control_rate": 0.4583333333333333,
+    "treatment_rate": 0.476831091180867,
+    "absolute_lift": 0.018497757847533658,
+    "relative_lift_pct": 4.03587443946189,
+    "z_statistic": 0.6726097741800995,
+    "p_value": 0.5011955818194929,
+    "ci_95_low": -0.03539379474252361,
+    "ci_95_high": 0.07238931043759092,
+    "significant_at_0.05": false
+  },
+  "sample_size_for_2pp_mde": 9771,
+  "ab_test_sequential_looks": [
+    {
+      "look": 1,
+      "n_per_arm": 129,
+      "p_value": 0.5331,
+      "significant_uncorrected": false,
+      "significant_bonferroni": false
+    },
+    {
+      "look": 2,
+      "n_per_arm": 259,
+      "p_value": 0.4289,
+      "significant_uncorrected": false,
+      "significant_bonferroni": false
+    },
+    {
+      "look": 3,
+      "n_per_arm": 388,
+      "p_value": 0.2504,
+      "significant_uncorrected": false,
+      "significant_bonferroni": false
+    },
+    {
+      "look": 4,
+      "n_per_arm": 518,
+      "p_value": 0.2905,
+      "significant_uncorrected": false,
+      "significant_bonferroni": false
+    },
+    {
+      "look": 5,
+      "n_per_arm": 648,
+      "p_value": 0.4358,
+      "significant_uncorrected": false,
+      "significant_bonferroni": false
+    }
+  ]
+}

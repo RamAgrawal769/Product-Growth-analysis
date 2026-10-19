@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" font-family="Helvetica,Arial,sans-serif">
+  <style>
+    .box { fill: #f8fafc; stroke: #2563eb; stroke-width: 1.5; rx: 8; }
+    .label { font-size: 13px; fill: #0f172a; }
+    .sub { font-size: 11px; fill: #475569; }
+    .arrow { stroke: #64748b; stroke-width: 1.6; marker-end: url(#arrow); }
+    .stage { font-size: 12px; fill: #2563eb; font-weight: 600; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="40" width="180" height="70" class="box"/>
+  <text x="30" y="65" class="stage">1. GENERATE</text>
+  <text x="30" y="85" class="label">generator.py</text>
+  <text x="30" y="100" class="sub">users.csv + events.csv</text>
+
+  <line x1="200" y1="75" x2="250" y2="75" class="arrow"/>
+
+  <rect x="250" y="10" width="200" height="130" class="box"/>
+  <text x="260" y="35" class="stage">2. METRICS</text>
+  <text x="260" y="55" class="label">funnel.py</text>
+  <text x="260" y="75" class="label">retention.py</text>
+  <text x="260" y="95" class="label">north_star.py</text>
+  <text x="260" y="115" class="label">feature_adoption.py</text>
+
+  <line x1="450" y1="75" x2="500" y2="75" class="arrow"/>
+
+  <rect x="500" y="40" width="190" height="70" class="box"/>
+  <text x="510" y="65" class="stage">3. EXPERIMENTS</text>
+  <text x="510" y="85" class="label">ab_test.py</text>
+  <text x="510" y="100" class="sub">z-test, MDE, sequential looks</text>
+
+  <line x1="595" y1="110" x2="595" y2="150" class="arrow"/>
+
+  <rect x="380" y="150" width="230" height="70" class="box"/>
+  <text x="390" y="175" class="stage">4. RUN_ANALYSIS</text>
+  <text x="390" y="195" class="label">scripts/run_analysis.py</text>
+  <text x="390" y="210" class="sub">assets/*.png + results.json</text>
+
+  <line x1="495" y1="220" x2="495" y2="260" class="arrow"/>
+
+  <rect x="330" y="260" width="330" height="70" class="box"/>
+  <text x="340" y="285" class="stage">5. DASHBOARD / CLI</text>
+  <text x="340" y="305" class="label">dashboard/app.py (Streamlit)</text>
+  <text x="340" y="320" class="sub">python -m product_analytics.cli</text>
+
+  <rect x="700" y="40" width="200" height="280" class="box" fill="#eef2ff"/>
+  <text x="710" y="65" class="stage">Design choices</text>
+  <text x="710" y="90" class="sub">- Ground-truth effect sizes</text>
+  <text x="710" y="105" class="sub">  are known by construction,</text>
+  <text x="710" y="120" class="sub">  so every model is checked</text>
+  <text x="710" y="135" class="sub">  against a real answer.</text>
+  <text x="710" y="160" class="sub">- Feature-adoption model</text>
+  <text x="710" y="175" class="sub">  controls for segment/</text>
+  <text x="710" y="190" class="sub">  channel to avoid confusing</text>
+  <text x="710" y="205" class="sub">  correlation with causation.</text>
+  <text x="710" y="230" class="sub">- A/B test engine reports</text>
+  <text x="710" y="245" class="sub">  CI + power, not just a</text>
+  <text x="710" y="260" class="sub">  binary significant/not.</text>
+</svg>
