@@ -1,0 +1,6 @@
+look,n_per_arm,p_value,significant_uncorrected,significant_bonferroni
+1,129,0.5331220123209339,False,False
+2,259,0.4288932842658342,False,False
+3,388,0.25043936845537274,False,False
+4,518,0.29049337520113205,False,False
+5,648,0.4358243070951522,False,False
